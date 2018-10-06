@@ -1,0 +1,26 @@
+{
+    "name": "hnndy/oper-action-log",
+    "description": "Oper Action Log",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jasester",
+            "email": "jasester@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Hnndy\\Operactionlog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hnndy\\Operactionlog\\OperactionLogServiceProvider"
+            ]
+        }
+    }
+}
