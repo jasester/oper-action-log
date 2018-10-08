@@ -25,7 +25,7 @@ class OperactionLog
                 'path'    => substr($request->path(), 0, 255),
                 'method'  => $request->method(),
                 'ip'      => $request->getClientIp(),
-                'input'   => json_encode($request->except('_token')),
+                'input'   => json_encode($request->except('_token', '_method')),
             ];
             try {
                 OperactionLogModel::create($log);
